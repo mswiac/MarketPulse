@@ -61,12 +61,9 @@ idea-notes.md
 # MCP configuration (may contain tokens)
 .mcp.json
 
-# Claude Code workspace — all contents are local/auto-managed
+# Claude Code / 10x-cli workspace — all contents are local/auto-managed
 .claude/
-.agents/agents
-.agents/commands
-.agents/hooks
-.agents/settings.json
+.agents/
 
 # System / special files
 .gitmodules
