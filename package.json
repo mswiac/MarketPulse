@@ -6,11 +6,16 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build && wrangler deploy",
+    "worker:dev": "wrangler dev --local",
+    "migrate:local": "wrangler d1 migrations apply marketpulse-db --local",
+    "migrate:remote": "wrangler d1 migrations apply marketpulse-db --remote"
   },
   "private": true,
   "packageManager": "npm@11.13.0",
   "dependencies": {
+    "hono": "^4",
     "@angular/common": "^22.0.0",
     "@angular/compiler": "^22.0.0",
     "@angular/core": "^22.0.0",
@@ -21,6 +26,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4",
+    "wrangler": "^4",
     "@angular/build": "^22.0.1",
     "@angular/cli": "^22.0.1",
     "@angular/compiler-cli": "^22.0.0",

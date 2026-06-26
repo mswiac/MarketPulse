@@ -1,6 +1,13 @@
 name = "marketpulse"
 compatibility_date = "2025-01-01"
+main = "src/worker/index.ts"
+compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = "./dist/market-pulse/browser"
 not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "marketpulse-db"
+database_id = "7476d353-d0d1-4687-be8e-12cdbd01494b"
