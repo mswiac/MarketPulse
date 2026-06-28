@@ -217,6 +217,6 @@ Update `context/foundation/roadmap.md` S-02 outcome and PRD refs to remove the n
 
 #### Manual
 
-- [x] 3.1 S-02 outcome reads "pre-filled from the user's account email"
-- [x] 3.2 S-02 PRD refs contain `FR-004, FR-005` (no FR-004a)
-- [x] 3.3 `grep -n "FR-004a" context/foundation/roadmap.md` → zero hits
+- [x] 3.1 S-02 outcome reads "pre-filled from the user's account email" — 54268b6
+- [x] 3.2 S-02 PRD refs contain `FR-004, FR-005` (no FR-004a) — 54268b6
+- [x] 3.3 `grep -n "FR-004a" context/foundation/roadmap.md` → zero hits — 54268b6
